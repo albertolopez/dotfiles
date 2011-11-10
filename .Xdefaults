@@ -79,6 +79,9 @@ URxvt*termName:xterm-256color
 #URxvt*termName: rxvt-unicode
 # Copy any selected text
 #URxvt.perl-ext-common: default,clipboard
+URxvt.perl-ext-common:  default,matcher
+URxvt.urlLauncher:      /usr/bin/firefox
+URxvt.matcher.button:   1 
 
 URxvt.keysym.Control-Up   \033[1;5A
 URxvt.keysym.Control-Down    \033[1;5B
