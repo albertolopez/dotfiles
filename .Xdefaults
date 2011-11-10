@@ -78,7 +78,7 @@ URxvt*scrollBar: false
 URxvt*termName:xterm-256color
 #URxvt*termName: rxvt-unicode
 # Copy any selected text
-URxvt.perl-ext-common: default,clipboard
+#URxvt.perl-ext-common: default,clipboard
 
 URxvt.keysym.Control-Up   \033[1;5A
 URxvt.keysym.Control-Down    \033[1;5B
