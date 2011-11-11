@@ -68,12 +68,11 @@ let g:pdv_cfg_CommentSingle = "//"
 
 " Default values
 let g:pdv_cfg_Type = "mixed"
-" let g:pdv_cfg_Package = "Framework"
-let g:pdv_cfg_Package = "Webdav"
-let g:pdv_cfg_Version = "//autogen//"
-let g:pdv_cfg_Author = ""
-let g:pdv_cfg_Copyright = "Copyright (C) 2005-2007 eZ systems as. All rights reserved."
-let g:pdv_cfg_License = "http://ez.no/licenses/new_bsd New BSD License"
+let g:pdv_cfg_Package = ""
+let g:pdv_cfg_Version = "$id$"
+let g:pdv_cfg_Author = "Alberto Lopez <alberto@fatbeehive.com>"
+let g:pdv_cfg_Copyright = "1997 - ".strftime("%Y")." Fatbeehive"
+let g:pdv_cfg_License = ""
 
 " TOB: let g:pdv_cfg_Type = "mixed"
 " TOB: let g:pdv_cfg_Package = ""
