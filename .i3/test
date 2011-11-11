@@ -1,6 +1,0 @@
-#!/bin/bash
-{
-php -f ~/xe.php
-printf " | "
-i3status -c ~/.i3/i3status.conf
-}

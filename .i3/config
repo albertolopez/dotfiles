@@ -167,17 +167,18 @@ new_window normal
 
 # enable floating mode for all Skype windows
 for_window [class="skype"] floating enable
-for_window [class="pidgin"] floating enable
-for_window [class="galculator"] floating enable
+for_window [class="^Pidgin$"] floating enable
+for_window [class="^Galculator$"] floating enable
 for_window [class="TogglDesktop"] floating enable
 
 # specific workspaces
-assign "Firefox" → 2
-assign "Skype" → 4
-assign "Toggl" → 4
-assign "chromium-browser" → 3
+assign [class="Firefox"] → 2
+assign [class="Skype"] → 4
+assign [class="^Pidgin$"] → 4
+assign [class="Toggl"] → 4
+assign [class="chromium-browser"] → 3
 
 # XXX: Automatically added a call to i3bar to provide a workspace bar
-exec i3status -c ~/.i3/i3status.conf | while true; do php xe.php; sleep 600;  | i3bar -d
+exec i3status -c ~/.i3/i3status.conf | i3bar -d
 
 exec redshift -m randr -l 51.526137:-0.08064
