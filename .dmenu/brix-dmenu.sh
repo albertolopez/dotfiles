@@ -1,6 +1,6 @@
 #!/bin/sh
 DMENU='dmenu -i -b -nb #000000 -nf #999999 -sb #000000 -sf #31658C  -fn -*-*-*-r-*--20-*-*-*-*-*-*-*'
-choice=$(echo "enei\njubileeaction\nvivid\njdrf\npfc\nhwt\nequalitymatters\nlifetimehomes\nsugar61\nderry\ntrain4csr\nmattd\nlcp\nw2\nkinoe\nshipshape\neduforhealth\ntheraholding\ninsidertours\nraveneco\ntim\nsse\nsenseaboutscience\nsdc\nsugar\ncrisis\nbiall\nbond\ndvr\nbats\ndesigners\naire\nfrancobritish\nalbertotest2\nalbertotest\nchalet\nplayright\nfatbeehive\narticle19\npeak\nbuildafrica\ncan\nwaterwise\nefa\nymca\nafghanaid\nexample\ninspire\nbuttle\nlondon_reuse\narchbishop\nunionchapel.org.uk\nasylumaid\ngreenworks\nefhreal\ndrupal\nptes\nsthelena\nlvac\ngrahamdolphin\npyl\nchallenge\ncombatstress\nannafreud\nhoney\nmrg\nhousing\nrac\nhumanitarian\ncareeracademies\nguv\ntwosaints\nhoneybee\nintranet.fatbeehive.com\nsilverstripe\nwastewatch\nbcs\ncrae\nwdp\nships\nbatsroost\npartygiving\ntype12012\ncebcam\ndavid\nframework\ncarbondescent\nbrix\nraven\ntna\nilpa\njustice\nbigbatmap\nresourcealliance\nceeman\nenham\nbifmmail\ngcv\npcrf\ncsreurope\noffset\nactivecampaign\nsecure\ntcpa" | $DMENU)
+choice=$(echo "enei\njubileeaction\nvivid\njdrf\npfc\nhwt\nequalitymatters\nlifetimehomes\nsugar61\nderry\ntrain4csr\nmattd\nlcp\nw2\nkinoe\nshipshape\neduforhealth\ntheraholding\ninsidertours\nraveneco\ntim\nsse\nsenseaboutscience\nsdc\nsugar\ncrisis\nbiall\nbond\ndvr\nbats\ndesigners\nbvsc\naire\nfrancobritish\nalbertotest2\nalbertotest\nchalet\nplayright\nfatbeehive\narticle19\npeak\nbuildafrica\ncan\nwaterwise\nefa\nymca\nafghanaid\nexample\ninspire\nbuttle\nlondon_reuse\narchbishop\nunionchapel.org.uk\nasylumaid\ngreenworks\nefhreal\ndrupal\nptes\nsthelena\nlvac\ngrahamdolphin\npyl\nchallenge\ncombatstress\nannafreud\nhoney\nmrg\nhousing\nrac\nhumanitarian\ncareeracademies\nguv\ntwosaints\nhoneybee\nintranet.fatbeehive.com\nsilverstripe\nwastewatch\nbcs\ncrae\nwdp\nships\nbatsroost\npartygiving\ntype12012\ncebcam\ndavid\nframework\ncarbondescent\nbrix\nraven\nmattd2\ntna\nilpa\njustice\nbigbatmap\nresourcealliance\nceeman\nenham\nbifmmail\ngcv\npcrf\ncsreurope\noffset\nactivecampaign\nsecure\ntcpa" | $DMENU)
 
 case "$choice" in
 enei) cd /mnt/sshfs/brix/server/www/enei/www; rxvt-unicode --title enei -e vim --servername enei;;
@@ -34,6 +34,7 @@ bond) cd /mnt/sshfs/brix/server/www/bond/www; rxvt-unicode --title bond -e vim -
 dvr) cd /mnt/sshfs/brix/server/www/dvr/www; rxvt-unicode --title dvr -e vim --servername dvr;;
 bats) cd /mnt/sshfs/brix/server/www/bats/www; rxvt-unicode --title bats -e vim --servername bats;;
 designers) cd /mnt/sshfs/brix/server/www/designers/www; rxvt-unicode --title designers -e vim --servername designers;;
+bvsc) cd /mnt/sshfs/brix/server/www/bvsc/www; rxvt-unicode --title bvsc -e vim --servername bvsc;;
 aire) cd /mnt/sshfs/brix/server/www/aire/www; rxvt-unicode --title aire -e vim --servername aire;;
 francobritish) cd /mnt/sshfs/brix/server/www/francobritish/www; rxvt-unicode --title francobritish -e vim --servername francobritish;;
 albertotest2) cd /mnt/sshfs/brix/server/www/albertotest2/www; rxvt-unicode --title albertotest2 -e vim --servername albertotest2;;
@@ -92,6 +93,7 @@ framework) cd /mnt/sshfs/brix/server/www/framework/www; rxvt-unicode --title fra
 carbondescent) cd /mnt/sshfs/brix/server/www/carbondescent/www; rxvt-unicode --title carbondescent -e vim --servername carbondescent;;
 brix) cd /mnt/sshfs/brix/server/www/brix/www; rxvt-unicode --title brix -e vim --servername brix;;
 raven) cd /mnt/sshfs/brix/server/www/raven/www; rxvt-unicode --title raven -e vim --servername raven;;
+mattd2) cd /mnt/sshfs/brix/server/www/mattd2/www; rxvt-unicode --title mattd2 -e vim --servername mattd2;;
 tna) cd /mnt/sshfs/brix/server/www/tna/www; rxvt-unicode --title tna -e vim --servername tna;;
 ilpa) cd /mnt/sshfs/brix/server/www/ilpa/www; rxvt-unicode --title ilpa -e vim --servername ilpa;;
 justice) cd /mnt/sshfs/brix/server/www/justice/www; rxvt-unicode --title justice -e vim --servername justice;;
