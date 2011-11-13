@@ -106,3 +106,5 @@ fi
 umask 002
 
 set -o vi
+
+complete -cf sudo
