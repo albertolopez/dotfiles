@@ -140,9 +140,15 @@ syntax on
 "write to a file using sudo
 cmap w!! %!sudo tee > /dev/null %
 
+" change cursor color in insert mode
 silent !echo -ne "]12;\#dd4010\x7"
 
 let &t_SI="]12;\#89b6e2\x7"
 let &t_EI="]12;\#dd4010\x7"
 
 au VimLeave * silent !echo -ne "]12;\#dd4010\x7"
+
+let g:yankring_history_dir = '~/.vim'
+
+" Source .vimrc after saving .vimrc
+autocmd bufwritepost .vimrc source $MYVIMRC
