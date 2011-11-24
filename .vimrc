@@ -88,7 +88,7 @@ vmap <C-Up> xkPz[V`]
 vmap <C-Down> xp`[V`]
 
 nnoremap <silent> <F10> :YRShow<CR> 
-set clipboard+=unnamed
+"set clipboard+=unnamed
 
 " Taglist
 let Tlist_Auto_Open = 0

@@ -16,7 +16,7 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 floating_modifier Mod1
 
 # start a terminal
-bindsym Mod1+Return exec /usr/bin/urxvt
+bindsym Mod1+Return exec /usr/bin/lxterminal
 
 # kill focused window
 bindsym Mod1+Shift+q kill
@@ -176,9 +176,11 @@ assign [class="Firefox"] → 2
 assign [class="Skype"] → 4
 assign [class="^Pidgin$"] → 4
 assign [class="Toggl"] → 4
-assign [class="chromium-browser"] → 3
+assign [class="Chromium-browser"] → 3
 
 # XXX: Automatically added a call to i3bar to provide a workspace bar
-exec i3status -c ~/.i3/i3status.conf | i3bar -d
+bar {
+	status_command i3status -c ~/.i3/i3status.conf
+}
 
 exec redshift -m randr -l 51.526137:-0.08064

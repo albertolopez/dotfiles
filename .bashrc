@@ -100,9 +100,10 @@ fi
 
 
 #if [[ "${COLORTERM}" == "gnome-terminal" && "${TERM}" != "xterm"  ]]; then
-    export TERM="xterm-256color"
+   # export TERM="xterm-256color"
+   #export TERM="rxvt-256color"
 #fi
 
 umask 002
 
-set -o vi
+#set -o vi
