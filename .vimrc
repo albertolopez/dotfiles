@@ -58,10 +58,8 @@ set lines=999 columns=999
 
 set guioptions+=b
 
-set wildmode=longest:full
-set wildmenu
 
-:set wildignore+=*.csv,*.xls,*.xlsx,*.pdf,*.doc,*.docx,*.sql,*.jpg,*.JPG,*.jpeg,*.gif,*.png,*.flv,*.mp3,data/*,images/*,_junk/*
+:set wildignore+=*.csv,*.xls,*.xlsx,*.pdf,*.doc,*.docx,*.sql,*.jpg,*.JPG,*.jpeg,*.gif,*.png,*.flv,*.mp3,data/*,images/*,_junk/*,tmp/*
 
 " no blink at end of file
 set t_vb=
@@ -153,24 +151,26 @@ let g:yankring_history_dir = '~/.vim'
 " Source .vimrc after saving .vimrc
 autocmd bufwritepost .vimrc source $MYVIMRC
 
+" Fast saving
+nmap <leader>s :w!<cr>
 
-let g:ctrlp_use_caching = 1
-let g:ctrlp_clear_cache_on_exit = 0
-let g:ctrlp_cache_dir = '~/.ctrlp'
-let g:ctrlp_dotfiles = 1
-let g:ctrlp_mruf_exclude = '/.hg/.*\|/data/.*'
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/data/*,*/.jpg/*,*/.jpeg/*,*/.png/*,*/.gif/*  " Linux/MacOSX
-let g:ctrlp_map = '<leader>t'
-let g:ctrlp_working_path_mode = 0
-let g:ctrlp_match_window_reversed = 1
-let g:ctrlp_split_window = 0
-let g:ctrlp_prompt_mappings = {
-\ 'PrtSelectMove("j")':   ['<c-j>', '<down>', '<s-tab>'],
-\ 'PrtSelectMove("k")':   ['<c-k>', '<up>', '<tab>'],
-\ 'PrtHistory(-1)':       ['<c-n>'],
-\ 'PrtHistory(1)':        ['<c-p>'],
-\ 'ToggleFocus()':        ['<c-tab>'],
-\ }
+"let g:ctrlp_use_caching = 1
+"let g:ctrlp_clear_cache_on_exit = 0
+"let g:ctrlp_cache_dir = '~/.ctrlp'
+"let g:ctrlp_dotfiles = 1
+"let g:ctrlp_mruf_exclude = '/.hg/.*\|/data/.*'
+"set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/data/*,*/.jpg/*,*/.jpeg/*,*/.png/*,*/.gif/*  " Linux/MacOSX
+"let g:ctrlp_map = '<leader>t'
+"let g:ctrlp_working_path_mode = 0
+"let g:ctrlp_match_window_reversed = 1
+"let g:ctrlp_split_window = 0
+"let g:ctrlp_prompt_mappings = {
+"\ 'PrtSelectMove("j")':   ['<c-j>', '<down>', '<s-tab>'],
+"\ 'PrtSelectMove("k")':   ['<c-k>', '<up>', '<tab>'],
+"\ 'PrtHistory(-1)':       ['<c-n>'],
+"\ 'PrtHistory(1)':        ['<c-p>'],
+"\ 'ToggleFocus()':        ['<c-tab>'],
+"\ }
 
 "set tab labels to show at most 12 characters
 set guitablabel=%-0.12t%M

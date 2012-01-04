@@ -54,10 +54,10 @@ noremap <buffer> ; :s/\([^;]\)$/\1;/<cr>:noh<CR><CR>
 " noremap <C-P> :w!<CR>:!php5 %<CR>
 
 " Map <ctrl>+p to single line mode documentation (in insert and command mode)
-inoremap <buffer> <C-P> :call PhpDocSingle()<CR>i
-nnoremap <buffer> <C-P> :call PhpDocSingle()<CR>
+inoremap <buffer> <C-D> :call PhpDocSingle()<CR>i
+nnoremap <buffer> <C-D> :call PhpDocSingle()<CR>
 " Map <ctrl>+p to multi line mode documentation (in visual mode)
-vnoremap <buffer> <C-P> :call PhpDocRange()<CR>
+vnoremap <buffer> <C-D> :call PhpDocRange()<CR>
 
 " Map <CTRL>-H to search phpm for the function name currently under the cursor (insert mode only)
 inoremap <buffer> <C-H> <ESC>:!phpm <C-R>=expand("<cword>")<CR><CR>

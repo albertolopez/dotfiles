@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/server/www/ilpa/www'
 let g:netrw_dirhist_2='/home/alberto/.vim'
 let g:netrw_dirhist_3='/mnt/sshfs/homer/server/www'
@@ -8,3 +8,4 @@ let g:netrw_dirhist_5='/mnt/sshfs/brix/server/www/ilpa/www'
 let g:netrw_dirhist_6='/home/alberto/.config/openbox'
 let g:netrw_dirhist_7='/home/alberto/i3/i3'
 let g:netrw_dirhist_8='/mnt/sshfs/brix/server/www/jubileeaction/www'
+let g:netrw_dirhist_9='/home/alberto/.config/luakit'
