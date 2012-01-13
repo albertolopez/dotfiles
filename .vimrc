@@ -34,7 +34,7 @@ nnoremap / /\v
 vnoremap / /\v
 set ignorecase
 set smartcase
-set gdefault
+"set gdefault
 set incsearch
 set showmatch
 set hlsearch
@@ -174,3 +174,8 @@ nmap <leader>s :w!<cr>
 
 "set tab labels to show at most 12 characters
 set guitablabel=%-0.12t%M
+
+""""""""""""""""""""""""""""""
+" => Command-T
+""""""""""""""""""""""""""""""
+noremap <leader>y :CommandTFlush<CR>
