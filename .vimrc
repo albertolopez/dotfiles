@@ -1,3 +1,4 @@
+call pathogen#infect()
 filetype on
 filetype plugin indent on
 filetype plugin on
@@ -54,7 +55,7 @@ set number
 set noswapfile
 
 "set lines=50 columns=185
-set lines=999 columns=999
+"set lines=999 columns=999
 
 set guioptions+=b
 
@@ -65,8 +66,8 @@ set guioptions+=b
 set t_vb=
 
 " tab navigation like firefox
-:nmap <C-S-tab> :tabprevious<CR>
-:nmap <C-tab> :tabnext<CR>
+:nmap <S-tab> :tabprevious<CR>
+:nmap <tab> :tabnext<CR>
 :map <C-S-tab> :tabprevious<CR>
 :map <C-tab> :tabnext<CR>
 :imap <C-S-tab> <Esc>:tabprevious<CR>i
