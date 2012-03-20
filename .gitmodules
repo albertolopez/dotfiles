@@ -40,3 +40,6 @@
 [submodule "bundle/tagbar"]
 	path = .vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
+[submodule ".vim/bundle/nercommenter"]
+	path = .vim/bundle/nercommenter
+	url = https://github.com/scrooloose/nerdcommenter
