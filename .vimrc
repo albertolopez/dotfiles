@@ -89,13 +89,8 @@ vmap <C-Down> xp`[V`]
 nnoremap <silent> <F10> :YRShow<CR> 
 "set clipboard+=unnamed
 
-" Taglist
-let Tlist_Auto_Open = 0
-let Tlist_Auto_Update = 1
-let Tlist_Show_One_File = 1
-let Tlist_Sort_Type = "name"
-let Tlist_Use_Right_Window = 1
-nnoremap <F5> :TlistToggle<CR>
+" Tagbar
+nmap <F8> :TagbarToggle<CR>
 
 " NERDTree
 let NERDTreeShowBookmarks=0
