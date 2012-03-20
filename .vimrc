@@ -175,3 +175,12 @@ set guitablabel=%-0.12t%M
 " => Command-T
 """"""""""""""""""""""""""""""
 noremap <leader>y :CommandTFlush<CR>
+
+
+""""""""""""""""""""""""""""""
+" => PDV
+""""""""""""""""""""""""""""""
+nnoremap <C-K> :call PhpDocSingle()<CR>
+vnoremap <C-K> :call PhpDocRange()<CR>
+
+map <C-C> <plug>NERDCommenterToggle
