@@ -112,19 +112,19 @@ map ,y "+y
 "copy to system clipboard
 map ,p "+gp
 
-autocmd BufWriteCmd *.html,*.css,*.php :call Refresh_firefox()
+"autocmd BufWriteCmd *.html,*.css,*.php :call Refresh_firefox()
 
- function! Refresh_firefox()
- if &modified
-     write
-     silent !echo  'vimYo = content.window.pageYOffset;
-                  \ vimXo = content.window.pageXOffset;
-                  \ BrowserReload();
-                  \ content.window.scrollTo(vimXo,vimYo);
-                  \ repl.quit();'  |
-                  \ nc -w 1 localhost 4242 2>&1 > /dev/null
-   endif
- endfunction
+ "function! Refresh_firefox()
+ "if &modified
+     "write
+     "silent !echo  'vimYo = content.window.pageYOffset;
+                  "\ vimXo = content.window.pageXOffset;
+                  "\ BrowserReload();
+                  "\ content.window.scrollTo(vimXo,vimYo);
+                  "\ repl.quit();'  |
+                  "\ nc -w 1 localhost 4242 2>&1 > /dev/null
+   "endif
+ "endfunction
 
 " zen coding
 let g:user_zen_leader_key = '<c-k>'
@@ -184,3 +184,15 @@ nnoremap <C-K> :call PhpDocSingle()<CR>
 vnoremap <C-K> :call PhpDocRange()<CR>
 
 map <C-C> <plug>NERDCommenterToggle
+
+" Easy window navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+" Disable arrow keys
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
