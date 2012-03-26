@@ -1,0 +1,16 @@
+data/Xdefaults-colors.i
+data/cf8.crx.i
+data/local.conf.i
+data/luakit/adblock.lua.i
+data/luakit/binds.lua.i
+data/luakit/globals.lua.i
+data/luakit/modes.lua.i
+data/luakit/rc.lua.i
+data/luakit/theme.lua.i
+data/luakit/webview.lua.i
+data/luakit/window.lua.i
+data/pentadactyl/cf8-mist.penta.i
+data/pentadactyl/cf8.penta.i
+data/runtmux.i
+data/tmux.conf.i
+data/vimrc.i
