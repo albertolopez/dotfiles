@@ -1,0 +1,161 @@
+" author: cF8 (cf8@cf8.ru)
+
+" plugins used:
+" zenconding - http://www.vim.org/scripts/script.php?script_id=2981
+" tcomment - http://www.vim.org/scripts/script.php%3Fscript_id%3D1173
+" FuzzyFinder - http://www.vim.org/scripts/script.php?script_id=1984
+" supertab - http://www.vim.org/scripts/script.php?script_id=182
+" colornames - http://www.vim.org/scripts/script.php?script_id=1604
+
+" colorscheme: slightly modified wombat256mod (http://www.vim.org/scripts/script.php?script_id=2465)
+
+" some general settings
+set autowrite
+set nocompatible
+set ruler
+set showcmd  
+set nu
+set ch=1
+set hidden
+
+" search and case
+set incsearch
+set hlsearch
+set ignorecase
+
+" case-sensetive search if however one char is uppercase, very usefull
+set smartcase
+
+" turn the bell off
+set novisualbell
+set t_vb=   
+
+" mouse settings
+set mouse=a
+
+" turn off backup, wapfile, set undodir
+set nobackup
+set noswapfile
+set undofile
+set undodir=~/.vim/undo
+
+" fix backspace behavior
+set backspace=indent,eol,start whichwrap+=<,>,[,]
+
+" indent and tab are so smart
+set autoindent
+set smartindent
+set smarttab
+set fo+=cr
+
+" wrap and break the lines
+set wrap
+set linebreak
+set pastetoggle=
+
+" scroll jump
+set scrolljump=8
+set scrolloff=8
+
+" syntax
+syntax on
+filetype plugin indent on
+
+" tab settings
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set noexpandtab 
+
+" show tabs as symbols
+set listchars=tab:>-
+set list 
+
+" colors and font
+set guifont=Terminus\ 10
+set t_Co=256
+colorscheme wombat256mod
+
+" --- Hotkeys --- "
+
+" no insert mode 
+imap >Ins> <Esc>i
+
+" visual shifting without exiting visual mode!
+vnoremap < <gv
+vnoremap > >gv
+
+" copy-paste
+vmap <C-C> "+ya
+vmap <C-X> "+xa
+imap <C-V> <esc>"+gpa
+
+" close buffer on shift-q
+nmap <S-q> <esc>:bd<cr>a
+
+" fix Esc key cursor go back
+inoremap <Esc> <Esc>`^
+
+" Space = PageDown, Shift-Space = PageUp
+nmap <Space> <PageDown>
+nmap <S-Space> <PageUp>
+
+" Shift-insert fix
+map <S-Insert> <MiddleMouse>
+map! <S-Insert> <MiddleMouse>
+
+
+" ZenCoding
+let g:user_zen_expandabbr_key = '<c-e>'
+let g:use_zen_complete_tag = 1
+" let g:user_zen_settings = { 'php' : {  'extends' : 'html',  }, 'html' : { 'extends' : 'html', }, 'css' : { 'extends' : 'css', }, 'less' : { 'extends' : 'css', }, 'htmljinja' : { 'extends' : 'html' }}
+
+" Omnicomplete 
+set ofu=syntaxcomplete#Complete
+
+" mutt settings
+au BufRead /tmp/mutt-* set tw=72
+augroup filetypedetect
+  " Mail
+  autocmd BufRead,BufNewFile *mutt-* setfiletype mail
+augroup END
+
+" make <c-l> clear the highlight as well as redraw
+nnoremap <C-L> :nohls<CR><C-L>
+inoremap <C-L> <C-O>:nohls<CR>
+
+" turn of gvim's bells and whistles
+if has('gui_running')
+	set guioptions-=T
+	set guioptions+=g
+	set guioptions-=t
+	set guioptions-=m
+	set guioptions-=L
+	set guioptions-=l
+	set guioptions-=r
+	set guioptions-=R
+	set showtabline=0
+endif
+
+" auto format { on double-{
+inoremap {{ {<Esc>o
+inoremap }} <Esc>o}
+
+" usefull
+nnoremap ; :
+inoremap jj <Esc>
+
+" turn off visual mode on : and ;
+vmap : <esc>
+vmap ; <esc>
+
+" FuzzyFinder binds
+nmap ` :FufBuffer<cr>
+nmap <F1> :FufFile<cr>
+
+" save file on F2
+nmap <F2> :w!<cr>
+
+" supertab settings
+let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
