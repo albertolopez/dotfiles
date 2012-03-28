@@ -1,5 +1,0 @@
-[ui]
-username = alberto <alberto@fatbeehive.com>
-
-[extensions]
-onsub = ~/.hgextensions/onsub/onsub.py
