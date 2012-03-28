@@ -14,3 +14,5 @@ nmap <leader>z :js window.content.document.toggleImageSize();<CR>
 nmap ee gt
 nmap en gT
 colorscheme cf8
+
+set guioptions+=n
