@@ -59,6 +59,7 @@ set noswapfile
 
 set guioptions+=b
 
+let mapleader = "<"
 
 :set wildignore+=*.csv,*.xls,*.xlsx,*.pdf,*.doc,*.docx,*.sql,*.jpg,*.JPG,*.jpeg,*.gif,*.png,*.flv,*.mp3,data/*,images/*,_junk/*,tmp/*
 
@@ -180,3 +181,5 @@ set guitablabel=%-0.12t%M
 " => Command-T
 """"""""""""""""""""""""""""""
 noremap <leader>y :CommandTFlush<CR>
+
+nmap <F8> :TagbarToggle<CR>

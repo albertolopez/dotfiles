@@ -109,3 +109,5 @@ umask 002
 #set -o vi
 
 complete -cf sudo
+
+set -o vi
