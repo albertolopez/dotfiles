@@ -90,13 +90,8 @@ vmap <C-Down> xp`[V`]
 nnoremap <silent> <F10> :YRShow<CR> 
 "set clipboard+=unnamed
 
-" Taglist
-let Tlist_Auto_Open = 0
-let Tlist_Auto_Update = 1
-let Tlist_Show_One_File = 1
-let Tlist_Sort_Type = "name"
-let Tlist_Use_Right_Window = 1
-nnoremap <F5> :TlistToggle<CR>
+" Tagbar
+nmap <F8> :TagbarToggle<CR>
 
 " NERDTree
 let NERDTreeShowBookmarks=0
@@ -118,19 +113,19 @@ map ,y "+y
 "copy to system clipboard
 map ,p "+gp
 
-autocmd BufWriteCmd *.html,*.css,*.php :call Refresh_firefox()
+"autocmd BufWriteCmd *.html,*.css,*.php :call Refresh_firefox()
 
- function! Refresh_firefox()
- if &modified
-     write
-     silent !echo  'vimYo = content.window.pageYOffset;
-                  \ vimXo = content.window.pageXOffset;
-                  \ BrowserReload();
-                  \ content.window.scrollTo(vimXo,vimYo);
-                  \ repl.quit();'  |
-                  \ nc -w 1 localhost 4242 2>&1 > /dev/null
-   endif
- endfunction
+ "function! Refresh_firefox()
+ "if &modified
+     "write
+     "silent !echo  'vimYo = content.window.pageYOffset;
+                  "\ vimXo = content.window.pageXOffset;
+                  "\ BrowserReload();
+                  "\ content.window.scrollTo(vimXo,vimYo);
+                  "\ repl.quit();'  |
+                  "\ nc -w 1 localhost 4242 2>&1 > /dev/null
+   "endif
+ "endfunction
 
 " zen coding
 let g:user_zen_leader_key = '<c-k>'
@@ -183,3 +178,23 @@ set guitablabel=%-0.12t%M
 noremap <leader>y :CommandTFlush<CR>
 
 nmap <F8> :TagbarToggle<CR>
+
+""""""""""""""""""""""""""""""
+" => PDV
+""""""""""""""""""""""""""""""
+nnoremap <C-K> :call PhpDocSingle()<CR>
+vnoremap <C-K> :call PhpDocRange()<CR>
+
+map <C-C> <plug>NERDCommenterToggle
+
+" Easy window navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+" Disable arrow keys
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
