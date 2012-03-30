@@ -100,3 +100,5 @@ unset use_color safe_term match_lhs
 set -o vi
 # ^l clear screen
 bind -m vi-insert "\C-l":clear-screen
+
+export EDITOR="vim"
