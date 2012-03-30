@@ -15,7 +15,7 @@ URxvt*transparent: false
 URxvt*saveLines: 12000
 
 # font color (default is black)
-URxvt*foreground: White
+URxvt*foreground:#eeeeec
 
 # background color (prior to tinting) (default is white)
 URxvt*background: Black
@@ -57,15 +57,19 @@ URxvt*background: Black
 #   alias ls="ls -h --color=auto"
 URxvt*color4: RoyalBlue
 URxvt*color12: RoyalBlue
-#URxvt.font: xft:DejaVu Sans Mono:antialias=true:pixelsize=14
-#URxvt.boldFont: xft:DejaVu Sans Mono:style=bold:antialias=true:pixelsize=14
+#URxvt.font: xft:DejaVu Sans Mono:antialias=true:pixelsize=15
+#URxvt.boldFont: xft:DejaVu Sans Mono:style=bold:antialias=true:pixelsize=15
 #URxvt*font: xft:Monospace:pixelsize=14
 #URxvt*boldFont: xft:Monospace:pixelsize=14
-#URxvt.font:xft:droid sans mono slashed:medium:pixelsize=11
-#URxvt.boldFont:xft:droid sans mono slashed:medium:pixelsize=11
+#URxvt.font:xft:Droid sans mono:antialias=true:medium:pixelsize=15
+#URxvt.boldFont:xft:Droid sans mono:style=bold:antialias=true:pixelsize=15
 
-URxvt.font: xft:Inconsolata-g:antialias=true:pixelsize=14
-URxvt.boldFont: xft:Inconsolata-g:style=bold:antialias=true:pixelsize=14
+#URxvt.font: xft:Inconsolata:antialias=true:pixelsize=14
+#URxvt.boldFont: xft:Inconsolata:style=bold:antialias=true:pixelsize=14
+
+URxvt.font: xft:Mensch:antialias=true:pixelsize=14
+#URxvt.boldFont: xft:Mensch:style=bold:antialias=true:pixelsize=14
+
 
 
 URxvt*letterSpace: -1
