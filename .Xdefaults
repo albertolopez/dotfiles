@@ -64,8 +64,8 @@ URxvt*color12: RoyalBlue
 #URxvt.font:xft:droid sans mono slashed:medium:pixelsize=11
 #URxvt.boldFont:xft:droid sans mono slashed:medium:pixelsize=11
 
-URxvt.font: xft:Inconsolata-g:pixelsize=17
-URxvt.boldFont: xft:Inconsolata-g:style=bold:pixelsize=17
+URxvt.font: xft:Inconsolata-g:antialias=true:pixelsize=14
+URxvt.boldFont: xft:Inconsolata-g:style=bold:antialias=true:pixelsize=14
 
 
 URxvt*letterSpace: -1
