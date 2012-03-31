@@ -15,7 +15,7 @@ URxvt*transparent: false
 URxvt*saveLines: 12000
 
 # font color (default is black)
-URxvt*foreground: White
+URxvt*foreground:#eeeeec
 
 # background color (prior to tinting) (default is white)
 URxvt*background: Black
@@ -28,8 +28,8 @@ URxvt*background: Black
 #
 # Xft: Bitstream fonts
 #  Fedora/debian packages: bitstream-vera-sans-mono-fonts/ttf-bitstream-vera 
-#URxvt*font: xft:Bitstream Vera Sans Mono:pixelsize=13:antialias=true:hinting=true
-#URxvt*boldFont: xft:Bitstream Vera Sans Mono:bold:pixelsize=13:antialias=true:hinting=true
+#URxvt*font: xft:Bitstream Vera Sans Mono:pixelsize=14:antialias=true:hinting=true
+#URxvt*boldFont: xft:Bitstream Vera Sans Mono:bold:pixelsize=14:antialias=true:hinting=true
 #
 # Xft: DejaVu fonts
 #  Fedora/debian packages: dejavu-sans-mono-fonts/ttf-dejavu 
@@ -38,8 +38,8 @@ URxvt*background: Black
 #
 # Xft: Liberation fonts
 #  Fedora/debian packages: liberation-mono-fonts/ttf-liberation
-#URxvt*font: xft:Liberation Mono:pixelsize=13:antialias=true:hinting=true
-#URxvt*boldFont: xft:Liberation Mono:bold:pixelsize=13:antialias=true:hinting=true
+#URxvt*font: xft:Liberation Mono:pixelsize=15:antialias=true:hinting=true
+#URxvt*boldFont: xft:Liberation Mono:bold:pixelsize=15:antialias=true:hinting=true
 #
 # Xft: Terminus fonts
 #  Fedora/debian packages: terminus-fonts/xfonts-terminus
@@ -50,19 +50,27 @@ URxvt*background: Black
 #URxvt*font:-*-courier-medium-r-normal-*-14-*-*-*-*-*-iso8859-1
 #URxvt*boldFont:-*-courier-bold-r-normal-*-14-*-*-*-*-*-iso8859-1
 
-# Replace blue folder colors with a lighter shade for clarity. To
+	# Replace blue folder colors with a lighter shade for clarity. To
 #  set colored folders and files within urxvt, xterm, and aterm, add
 #  the following line to your ~/.bashrc ($HOME/.bashrc) file under
 #  the heading "# User specific aliases and functions":
 #   alias ls="ls -h --color=auto"
 URxvt*color4: RoyalBlue
 URxvt*color12: RoyalBlue
-#URxvt.font: xft:DejaVu Sans Mono:antialias=true:pixelsize=14
-#URxvt.boldFont: xft:DejaVu Sans Mono:style=bold:antialias=true:pixelsize=14
-URxvt*font: xft:Monospace:pixelsize=13
-URxvt*boldFont: xft:Monospace:pixelsize=13
-#URxvt.font:xft:droid sans mono slashed:medium:pixelsize=11
-#URxvt.boldFont:xft:droid sans mono slashed:medium:pixelsize=11
+#URxvt.font: xft:DejaVu Sans Mono:antialias=true:pixelsize=15
+#URxvt.boldFont: xft:DejaVu Sans Mono:style=bold:antialias=true:pixelsize=15
+#URxvt*font: xft:Monospace:pixelsize=14
+#URxvt*boldFont: xft:Monospace:pixelsize=14
+#URxvt.font:xft:Droid sans mono:antialias=true:medium:pixelsize=15
+#URxvt.boldFont:xft:Droid sans mono:style=bold:antialias=true:pixelsize=15
+
+#URxvt.font: xft:Inconsolata:antialias=true:pixelsize=14
+#URxvt.boldFont: xft:Inconsolata:style=bold:antialias=true:pixelsize=14
+
+URxvt.font: xft:Mensch:antialias=true:pixelsize=14
+#URxvt.boldFont: xft:Mensch:style=bold:antialias=true:pixelsize=14
+
+
 
 URxvt*letterSpace: -1
 

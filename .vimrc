@@ -27,7 +27,6 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
-"set autochdir
 set mouse=a
 
 
@@ -59,7 +58,7 @@ set noswapfile
 
 set guioptions+=b
 
-let mapleader = "<"
+"let mapleader = "<"
 
 :set wildignore+=*.csv,*.xls,*.xlsx,*.pdf,*.doc,*.docx,*.sql,*.jpg,*.JPG,*.jpeg,*.gif,*.png,*.flv,*.mp3,data/*,images/*,_junk/*,tmp/*
 
