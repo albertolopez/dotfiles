@@ -1,0 +1,24 @@
+open_with zathura
+search tm
+shell 
+help
+open_with 
+open_with r
+search mercha
+open_with q
+search vao
+search ser
+search ww
+delete
+open_with :q
+search med
+delete seriously? y
+cd /server/beekeeper2/form_builder
+cd /server/www/backroom/www/
+search fab
+extracthere 
+cd /server/www/backroom/www/libs/twig
+rename twig.old
+rename
+rename twig
+q
