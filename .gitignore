@@ -3,3 +3,5 @@
 .pentadactyl/info/default/local-marks
 .pentadactyl/info/default/register-ring
 .vim/.netrwhist
+ranger/bookmarks
+ranger/history
