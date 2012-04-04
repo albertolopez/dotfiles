@@ -102,3 +102,6 @@ set -o vi
 bind -m vi-insert "\C-l":clear-screen
 
 export EDITOR="vim"
+
+PATH=$PATH:~/.gem/ruby/1.9.1/bin
+export PATH
