@@ -47,6 +47,7 @@ set formatoptions=qrn1
 set list
 set listchars=tab:▸\ ,eol:¬
 
+set term=xterm
 set t_Co=256
 colorscheme wombat256
 set guifont=Monospace\ 9
