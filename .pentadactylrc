@@ -16,3 +16,6 @@ nmap en gT
 colorscheme cf8
 
 set guioptions+=n
+
+" highlight all search results
+set hlfind
