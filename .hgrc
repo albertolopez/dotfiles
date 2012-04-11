@@ -3,3 +3,6 @@ username = Alberto Lopez <aberto@fatbeehive.com>
 
 [extensions]
 onsub = ~/.hgextensions/onsub/onsub.py
+
+[trusted] 
+users = *

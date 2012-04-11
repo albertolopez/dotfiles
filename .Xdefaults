@@ -16,9 +16,11 @@ URxvt*saveLines: 12000
 
 # font color (default is black)
 URxvt*foreground:#eeeeec
+#URxvt*foreground:#b98000
 
 # background color (prior to tinting) (default is white)
-URxvt*background: Black
+#URxvt*background: Black
+URxvt*background: #222222
 
 # Xft (X FreeType) with Bitstream, DejaVu, Liberation, or Terminus fonts:
 #  Fedora/debian packages: libXft/libxft2 
