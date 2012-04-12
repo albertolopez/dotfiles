@@ -40,3 +40,6 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bi
 setopt autocd
 unsetopt correctall
 alias ssh="~/bin/perhostcolor/ssh.sh"
+
+umask 002
+
