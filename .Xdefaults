@@ -19,8 +19,7 @@ URxvt*foreground:#eeeeec
 #URxvt*foreground:#b98000
 
 # background color (prior to tinting) (default is white)
-#URxvt*background: Black
-URxvt*background: #222222
+URxvt*background: Black
 
 # Xft (X FreeType) with Bitstream, DejaVu, Liberation, or Terminus fonts:
 #  Fedora/debian packages: libXft/libxft2 
