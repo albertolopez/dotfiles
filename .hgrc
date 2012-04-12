@@ -6,3 +6,6 @@ onsub = ~/.hgextensions/onsub/onsub.py
 
 [trusted] 
 users = *
+
+[extensions]
+color =
