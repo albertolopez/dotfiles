@@ -9,3 +9,5 @@ users = *
 
 [extensions]
 color =
+hgext.graphlog =
+purge=
