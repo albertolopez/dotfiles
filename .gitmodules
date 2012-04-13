@@ -58,3 +58,6 @@
 [submodule ".vim/bundle/ack"]
 	path = .vim/bundle/ack
 	url = git://github.com/mileszs/ack.vim.git
+[submodule ".vim/bundle/piv"]
+	path = .vim/bundle/piv
+	url = git://github.com/spf13/PIV.git
