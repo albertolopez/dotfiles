@@ -29,7 +29,7 @@ ZSH_THEME="alberto"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git vi-mode archlinux mercurial history-substring-search zsh-syntax-highlighting)
+plugins=(git vi-mode mercurial history-substring-search zsh-syntax-highlighting yum)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -40,6 +40,7 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bi
 setopt autocd
 unsetopt correctall
 alias ssh="~/bin/perhostcolor/ssh.sh"
+alias vim="gvim -v"
 
 umask 002
 
