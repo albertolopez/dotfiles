@@ -64,3 +64,6 @@
 [submodule ".vim/bundle/MatchTag"]
 	path = .vim/bundle/MatchTag
 	url = git://github.com/gregsexton/MatchTag.git
+[submodule ".vim/bundle/vim-easytags"]
+	path = .vim/bundle/vim-easytags
+	url = git://github.com/xolox/vim-easytags.git
