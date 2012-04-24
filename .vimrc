@@ -199,3 +199,5 @@ map <left> <nop>
 map <right> <nop>
 
 let g:DisableAutoPHPFolding=1
+
+let g:easytags_autorecurse = 1
