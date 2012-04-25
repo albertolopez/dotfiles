@@ -68,7 +68,7 @@ URxvt*color12: RoyalBlue
 #URxvt.font: xft:Inconsolata:antialias=true:pixelsize=14
 #URxvt.boldFont: xft:Inconsolata:style=bold:antialias=true:pixelsize=14
 
-URxvt.font: xft:Mensch:antialias=true:pixelsize=14
+URxvt.font: xft:Mensch:antialias=true:pixelsize=15
 #URxvt.boldFont: xft:Mensch:style=bold:antialias=true:pixelsize=14
 
 
