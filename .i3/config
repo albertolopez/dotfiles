@@ -188,3 +188,6 @@ bar {
 #exec /usr/bin/xmodmap /home/alberto/.speedswapper
 #exec /bin/bash /home/alberto/bin/xmodmap
 #exec xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+
+workspace 1 output VGA1
+workspace 2 output LVDS1

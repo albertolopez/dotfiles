@@ -59,7 +59,7 @@ set noswapfile
 
 set guioptions+=b
 
-"let mapleader = "<"
+let mapleader = "<"
 
 :set wildignore+=*.csv,*.xls,*.xlsx,*.pdf,*.doc,*.docx,*.sql,*.jpg,*.JPG,*.jpeg,*.gif,*.png,*.flv,*.mp3,data/*,images/*,_junk/*,tmp/*
 
@@ -199,3 +199,5 @@ map <left> <nop>
 map <right> <nop>
 
 let g:DisableAutoPHPFolding=1
+
+let g:easytags_autorecurse = 1
