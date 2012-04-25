@@ -59,7 +59,7 @@ set noswapfile
 
 set guioptions+=b
 
-let mapleader = "<"
+"let mapleader = "<"
 
 :set wildignore+=*.csv,*.xls,*.xlsx,*.pdf,*.doc,*.docx,*.sql,*.jpg,*.JPG,*.jpeg,*.gif,*.png,*.flv,*.mp3,data/*,images/*,_junk/*,tmp/*
 
@@ -193,11 +193,18 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 " Disable arrow keys
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
+"map <up> <nop>
+"map <down> <nop>
+"map <left> <nop>
+"map <right> <nop>
 
 let g:DisableAutoPHPFolding=1
 
 let g:easytags_autorecurse = 1
+let g:easytags_auto_update = 0
+"--------------------
+" Function: Open tag under cursor in new tab
+" Source:   http://stackoverflow.com/questions/563616/vimctags-tips-and-tricks
+"--------------------
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+nmap <C-L> :pop<CR>
