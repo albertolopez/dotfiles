@@ -208,3 +208,5 @@ let g:easytags_auto_update = 0
 "--------------------
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 nmap <C-L> :pop<CR>
+
+let g:syntastic_auto_jump=1
