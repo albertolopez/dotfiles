@@ -90,3 +90,9 @@
 	path = .vim/bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
 	ignore = dirty
+[submodule ".vim/bundle/vim-todo"]
+	path = .vim/bundle/vim-todo
+	url = git://github.com/svenfuchs/vim-todo.git
+[submodule ".vim/bundle/vim-layout"]
+	path = .vim/bundle/vim-layout
+	url = git://github.com/svenfuchs/vim-layout.git
