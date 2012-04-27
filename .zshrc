@@ -29,7 +29,7 @@ ZSH_THEME="alberto"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git vi-mode svn history-substring-search zsh-syntax-highlighting yum)
+plugins=(git vi-mode mercurial svn history-substring-search zsh-syntax-highlighting yum)
 
 source $ZSH/oh-my-zsh.sh
 
