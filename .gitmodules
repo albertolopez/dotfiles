@@ -1,69 +1,92 @@
 [submodule "bundle/command-t"]
 	path = .vim/bundle/command-t
 	url = git://git.wincent.com/command-t.git
+	ignore = dirty
 [submodule "bundle/nerdtree"]
 	path = .vim/bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
+	ignore = dirty
 [submodule "bundle/YankRing.vim"]
 	path = .vim/bundle/YankRing.vim
 	url = git://github.com/vim-scripts/YankRing.vim.git
+	ignore = dirty
 [submodule "bundle/snipmate.vim"]
 	path = .vim/bundle/snipmate.vim
 	url = git://github.com/msanders/snipmate.vim.git
+	ignore = dirty
 [submodule "bundle/zencoding-vim"]
 	path = .vim/bundle/zencoding-vim
 	url = http://github.com/mattn/zencoding-vim.git
+	ignore = dirty
 [submodule "bundle/vim-surround"]
 	path = .vim/bundle/vim-surround
 	url = git://github.com/tpope/vim-surround.git
+	ignore = dirty
 [submodule "bundle/vim-matchit"]
 	path = .vim/bundle/vim-matchit
 	url = git://github.com/tsaleh/vim-matchit.git
+	ignore = dirty
 [submodule "bundle/taglist"]
 	path = .vim/bundle/taglist
 	url = git://github.com/vim-scripts/taglist.vim.git
+	ignore = dirty
 [submodule "bundle/supertab"]
 	path = .vim/bundle/supertab
 	url = git://github.com/ervandew/supertab.git
+	ignore = dirty
 [submodule "bundle/vim-easymotion"]
 	path = .vim/bundle/vim-easymotion
 	url = git://github.com/Lokaltog/vim-easymotion.git
+	ignore = dirty
 [submodule "bundle/vip"]
 	path = .vim/bundle/vip
 	url = git://github.com/tobyS/vip.git
+	ignore = dirty
 [submodule "bundle/vim-powerline"]
 	path = .vim/bundle/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline
+	ignore = dirty
 [submodule "bundle/vim-colors-solarized"]
 	path = .vim/bundle/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
+	ignore = dirty
 [submodule "bundle/tagbar"]
 	path = .vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
+	ignore = dirty
 [submodule ".vim/bundle/vim-fugitive"]
 	path = .vim/bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
+	ignore = dirty
 [submodule ".vim/bundle/delimitMate"]
 	path = .vim/bundle/delimitMate
 	url = git://github.com/vim-scripts/delimitMate.vim.git
+	ignore = dirty
 [submodule ".vim/bundle/nerdcommenter"]
 	path = .vim/bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
+	ignore = dirty
 [submodule ".oh-my-zsh"]
 	path = .oh-my-zsh
 	url = git@github.com:albertolopez/oh-my-zsh.git
+	ignore = dirty
 [submodule ".vim/bundle/ack"]
 	path = .vim/bundle/ack
 	url = git://github.com/mileszs/ack.vim.git
+	ignore = dirty
 [submodule ".vim/bundle/piv"]
 	path = .vim/bundle/piv
 	url = git://github.com/spf13/PIV.git
+	ignore = dirty
 [submodule ".vim/bundle/MatchTag"]
 	path = .vim/bundle/MatchTag
 	url = git://github.com/gregsexton/MatchTag.git
+	ignore = dirty
 [submodule ".vim/bundle/vim-easytags"]
 	path = .vim/bundle/vim-easytags
 	url = git://github.com/xolox/vim-easytags.git
+	ignore = dirty
 [submodule ".vim/bundle/syntastic"]
 	path = .vim/bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
+	ignore = dirty
