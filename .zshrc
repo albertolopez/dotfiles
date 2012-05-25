@@ -34,13 +34,20 @@ plugins=(git vi-mode svn history-substring-search zsh-syntax-highlighting yum)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/alberto/.gem/ruby/1.9.1/bin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/alberto/.gem/ruby/1.9.1/bin:/opt/netbeans-7.1.1/bin:/home/alberto/bin
 
 
 setopt autocd
 unsetopt correctall
-alias ssh="~/bin/perhostcolor/ssh.sh"
+#alias ssh="~/bin/perhostcolor/ssh.sh"
 alias vim="gvim -v"
+alias tail='grc tail'
+alias errorlog="sudo grc tail -f /var/log/httpd/error_log"
+alias ping="grc ping"
+alias sudo='sudo env PATH=$PATH $@'
+alias cu='sudo cu'
+alias nohup='/usr/bin/nohup >/dev/null 2>&1'
 
 umask 002
-
+#export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=setting'
+export _JAVA_OPTIONS="-Dswing.aatext=true -Dawt.useSystemAAFontSettings=on -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel"
