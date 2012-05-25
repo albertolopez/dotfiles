@@ -11,7 +11,8 @@ set modelines=0
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-set noexpandtab
+"set noexpandtab
+set expandtab
 
 set encoding=utf-8
 set scrolloff=3
@@ -61,7 +62,7 @@ set guioptions+=b
 
 "let mapleader = "<"
 
-:set wildignore+=*.csv,*.xls,*.xlsx,*.pdf,*.doc,*.docx,*.sql,*.jpg,*.JPG,*.jpeg,*.gif,*.png,*.flv,*.mp3,data/*,images/*,_junk/*,tmp/*
+:set wildignore+=*.csv,*.xls,*.xlsx,*.pdf,*.doc,*.docx,*.sql,*.jpg,*.JPG,*.jpeg,*.gif,*.png,*.flv,*.mp3,data/*,images/*,_junk/*,tmp/*,lib/smarty/templates_c/*,private/*
 
 " no blink at end of file
 set t_vb=
@@ -98,7 +99,7 @@ let NERDTreeShowBookmarks=0
 let NERDTreeQuitOnOpen = 1
 "autocmd VimEnter * NERDTree 
 "autocmd BufEnter * NERDTreeMirror
-:map <F2> :NERDTreeToggle<CR>
+:map <F7> :NERDTreeToggle<CR>
 set guitablabel=%t
 "autocmd BufEnter * lcd %:p:h
 "cmap ob NERDTreeFromBookmark 
@@ -207,6 +208,21 @@ let g:easytags_auto_update = 0
 " Source:   http://stackoverflow.com/questions/563616/vimctags-tips-and-tricks
 "--------------------
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
-nmap <C-L> :pop<CR>
+nmap <C-A> :pop<CR>
 
 let g:syntastic_auto_jump=1
+let g:SuperTabDefaultCompletionType = "context"
+
+nnoremap <F9> :GundoToggle<CR>
+
+"--------------------
+" Function: Switch to last-active tab
+" Source: http://stackoverflow.com/questions/2119754/switch-to-last-active-tab-in-vim
+" --------------------
+let g:lasttab = 1
+nmap <Leader>ee :exe "tabn ".g:lasttab<CR>
+au TabLeave * let g:lasttab = tabpagenr()
+
+
+
+nmap <leader>f :Ack 
