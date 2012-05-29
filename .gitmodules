@@ -96,3 +96,24 @@
 [submodule ".vim/bundle/vim-layout"]
 	path = .vim/bundle/vim-layout
 	url = git://github.com/svenfuchs/vim-layout.git
+[submodule ".vim/bundle/vim-twig"]
+	path = .vim/bundle/vim-twig
+	url = git://github.com/beyondwords/vim-twig.git
+[submodule ".vim/bundle/phpcomplete"]
+	path = .vim/bundle/phpcomplete
+	url = git://github.com/shawncplus/phpcomplete.vim.git
+[submodule ".vim/bundle/PDV"]
+	path = .vim/bundle/PDV
+	url = git://github.com/vim-scripts/PDV--phpDocumentor-for-Vim.git
+[submodule ".vim/bundle/neocomplcache"]
+	path = .vim/bundle/neocomplcache
+	url = git://github.com/Shougo/neocomplcache.git
+[submodule ".vim/bundle/neocomplcache-snippets"]
+	path = .vim/bundle/neocomplcache-snippets
+	url = git://github.com/Shougo/neocomplcache-snippets-complete.git
+[submodule ".vim/bundle/checksyntax"]
+	path = .vim/bundle/checksyntax
+	url = git://github.com/tomtom/checksyntax_vim.git
+[submodule ".vim/bundle/supertab"]
+	path = .vim/bundle/supertab
+	url = git://github.com/ervandew/supertab.git

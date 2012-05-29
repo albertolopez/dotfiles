@@ -207,6 +207,13 @@ let g:easytags_auto_update = 0
 " Source:   http://stackoverflow.com/questions/563616/vimctags-tips-and-tricks
 "--------------------
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
-nmap <C-L> :pop<CR>
+nmap <C-A> :pop<CR>
 
 let g:syntastic_auto_jump=1
+
+" PDV
+"inoremap <C-M> <ESC>:call PhpDocSingle()<CR>i
+"nnoremap <C-M> :call PhpDocSingle()<CR>
+"vnoremap <C-M> :call PhpDocRange()<CR> 
+
+let g:SuperTabDefaultCompletionType = "context"
