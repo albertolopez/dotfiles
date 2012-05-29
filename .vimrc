@@ -217,3 +217,5 @@ let g:syntastic_auto_jump=1
 "vnoremap <C-M> :call PhpDocRange()<CR> 
 
 let g:SuperTabDefaultCompletionType = "context"
+
+nnoremap <F9> :GundoToggle<CR>

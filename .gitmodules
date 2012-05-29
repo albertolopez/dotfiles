@@ -117,3 +117,12 @@
 [submodule ".vim/bundle/supertab"]
 	path = .vim/bundle/supertab
 	url = git://github.com/ervandew/supertab.git
+[submodule ".vim/bundle/VimDebugger"]
+	path = .vim/bundle/VimDebugger
+	url = git://github.com/taxilian/VimDebugger.git
+[submodule ".vim/bundle/DBGp"]
+	path = .vim/bundle/DBGp
+	url = git://github.com/vim-scripts/DBGp-Remote-Debugger-Interface.git
+[submodule ".vim/bundle/gundo"]
+	path = .vim/bundle/gundo
+	url = git://github.com/sjl/gundo.vim.git
