@@ -211,18 +211,14 @@ map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 nmap <C-A> :pop<CR>
 
 let g:syntastic_auto_jump=1
+
+nmap <leader>f :Ack 
+
+" PDV
+"inoremap <C-M> <ESC>:call PhpDocSingle()<CR>i
+"nnoremap <C-M> :call PhpDocSingle()<CR>
+"vnoremap <C-M> :call PhpDocRange()<CR> 
+
 let g:SuperTabDefaultCompletionType = "context"
 
 nnoremap <F9> :GundoToggle<CR>
-
-"--------------------
-" Function: Switch to last-active tab
-" Source: http://stackoverflow.com/questions/2119754/switch-to-last-active-tab-in-vim
-" --------------------
-let g:lasttab = 1
-nmap <Leader>ee :exe "tabn ".g:lasttab<CR>
-au TabLeave * let g:lasttab = tabpagenr()
-
-
-
-nmap <leader>f :Ack 
