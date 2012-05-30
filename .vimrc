@@ -226,3 +226,7 @@ au TabLeave * let g:lasttab = tabpagenr()
 
 
 nmap <leader>f :Ack 
+
+nmap <leader>gst :Gstatus<CR>
+nmap <leader>gsr :Git svn rebase<CR>
+nmap <leader>gsd :Git svn dcommit<CR>
