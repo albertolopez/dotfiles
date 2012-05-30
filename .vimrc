@@ -211,8 +211,6 @@ map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 nmap <C-A> :pop<CR>
 
 let g:syntastic_auto_jump=1
-let g:SuperTabDefaultCompletionType = "context"
-
 
 nmap <leader>f :Ack 
 
@@ -220,8 +218,12 @@ nmap <leader>gst :Gstatus<CR>
 nmap <leader>gsr :Git svn rebase<CR>
 nmap <leader>gsd :Git svn dcommit<CR>
 
+
 " PDV
 "inoremap <C-M> <ESC>:call PhpDocSingle()<CR>i
 "nnoremap <C-M> :call PhpDocSingle()<CR>
 "vnoremap <C-M> :call PhpDocRange()<CR> 
 
+let g:SuperTabDefaultCompletionType = "context"
+
+nnoremap <F9> :GundoToggle<CR>
