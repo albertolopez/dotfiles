@@ -192,3 +192,16 @@ exec rmemcached
 
 workspace 1 output VGA1
 workspace 2 output LVDS1
+
+## border style for new windows <normal|1pixel|none>
+new_window 1pixel
+
+## border style for for floating windows <normal|1pixel|none>
+new_float normal
+
+#############
+# WM COLORS #
+#############
+
+## class                 border  backgr. text
+client.focused           #FF0000 #FF0000 #FFFFFF
