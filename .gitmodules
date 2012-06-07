@@ -126,3 +126,9 @@
 [submodule ".vim/bundle/gundo"]
 	path = .vim/bundle/gundo
 	url = git://github.com/sjl/gundo.vim.git
+[submodule ".vim/bundle/postgres"]
+	path = .vim/bundle/postgres
+	url = https://github.com/ivalkeen/vim-postgres
+[submodule ".vim/bundle/minibufexpl.vim"]
+	path = .vim/bundle/minibufexpl.vim
+	url = git://github.com/fholgado/minibufexpl.vim.git

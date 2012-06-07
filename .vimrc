@@ -68,8 +68,8 @@ set guioptions+=b
 set t_vb=
 
 " tab navigation like firefox
-:nmap <S-tab> :tabprevious<CR>
-:nmap <tab> :tabnext<CR>
+":nmap <S-tab> :tabprevious<CR>
+":nmap <tab> :tabnext<CR>
 :map <C-S-tab> :tabprevious<CR>
 :map <C-tab> :tabnext<CR>
 :imap <C-S-tab> <Esc>:tabprevious<CR>i
@@ -77,8 +77,13 @@ set t_vb=
 :nmap <C-t> :tabnew<CR>
 :imap <C-t> <Esc>:tabnew<CR>
 
+" buffer navigation
+nmap <Tab> :bnext<CR>
+nmap <S-Tab> :bprevious<CR>
+
 vmap <Tab> >gv
 vmap <S-Tab> <gv
+
 
 "Bubble single lines
 nmap <C-UP> ddkP
@@ -227,3 +232,11 @@ nmap <leader>gsd :Git svn dcommit<CR>
 let g:SuperTabDefaultCompletionType = "context"
 
 nnoremap <F9> :GundoToggle<CR>
+
+nmap <leader>q :tabnew ~/postgre.sql<CR>
+
+" minibuxexpl
+let g:miniBufExplMapCTabSwitchBufs = 1
+
+
+nmap <leader>d :bd<CR>
