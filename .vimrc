@@ -118,19 +118,19 @@ map ,y "+y
 "copy to system clipboard
 map ,p "+gp
 
-"autocmd BufWriteCmd *.html,*.css,*.php :call Refresh_firefox()
+autocmd BufWriteCmd *.html,*.css,*.php,*.xml,*.tpl :call Refresh_firefox()
 
- "function! Refresh_firefox()
- "if &modified
-     "write
-     "silent !echo  'vimYo = content.window.pageYOffset;
-                  "\ vimXo = content.window.pageXOffset;
-                  "\ BrowserReload();
-                  "\ content.window.scrollTo(vimXo,vimYo);
-                  "\ repl.quit();'  |
-                  "\ nc -w 1 localhost 4242 2>&1 > /dev/null
-   "endif
- "endfunction
+ function! Refresh_firefox()
+ if &modified
+     write
+     silent !echo  'vimYo = content.window.pageYOffset;
+                  \ vimXo = content.window.pageXOffset;
+                  \ BrowserReload();
+                  \ content.window.scrollTo(vimXo,vimYo);
+                  \ repl.quit();'  |
+                  \ nc -w 1 localhost 4242 2>&1 > /dev/null
+   endif
+ endfunction
 
 " zen coding
 let g:user_zen_leader_key = '<c-k>'
@@ -217,7 +217,7 @@ nmap <C-A> :pop<CR>
 
 let g:syntastic_auto_jump=1
 
-nmap <leader>f :Ack 
+nmap <leader>f :Ack! 
 
 nmap <leader>gst :Gstatus<CR>
 nmap <leader>gsr :Git svn rebase<CR>
@@ -239,4 +239,10 @@ nmap <leader>q :tabnew ~/postgre.sql<CR>
 let g:miniBufExplMapCTabSwitchBufs = 1
 
 
-nmap <leader>d :bd<CR>
+nmap <leader>d :bw<CR>
+let g:miniBufExplCheckDupeBufs = 0
+let g:miniBufExplModSelTarget = 1
+let g:miniBufExplUseSingleClick = 1
+"let g:miniBufExplShowBufNumbers = 0
+
+let g:tagbar_singleclick = 1
