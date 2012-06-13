@@ -246,3 +246,5 @@ let g:miniBufExplUseSingleClick = 1
 "let g:miniBufExplShowBufNumbers = 0
 
 let g:tagbar_singleclick = 1
+
+let g:debuggerMiniBufExpl = 1
