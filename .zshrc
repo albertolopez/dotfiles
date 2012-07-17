@@ -52,4 +52,4 @@ umask 002
 #export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=setting'
 export _JAVA_OPTIONS="-Dswing.aatext=true -Dawt.useSystemAAFontSettings=on -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel"
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:/opt/vagrant/bin/:$HOME/.rvm/bin # Add RVM to PATH for scripting

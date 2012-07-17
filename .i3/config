@@ -190,8 +190,8 @@ exec rmemcached
 #exec /bin/bash /home/alberto/bin/xmodmap
 #exec xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 
-workspace 1 output VGA1
-workspace 2 output LVDS1
+workspace 1 output DVI-I-1
+workspace 2 output VGA-1
 
 ## border style for new windows <normal|1pixel|none>
 #new_window 1pixel

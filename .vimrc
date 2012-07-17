@@ -228,6 +228,10 @@ let g:miniBufExplModSelTarget = 1
 let g:miniBufExplUseSingleClick = 1
 "let g:miniBufExplShowBufNumbers = 0
 
-let g:tagbar_singleclick = 1
+"let g:tagbar_singleclick = 1
 
 let g:debuggerMiniBufExpl = 1
+
+
+"increment decrement
+:nnoremap <C-l> <C-a>
