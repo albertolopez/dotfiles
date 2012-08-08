@@ -175,7 +175,7 @@ assign [class="Firefox"] → 2
 assign [class="Skype"] → 4
 assign [class="^Pidgin$"] → 4
 assign [class="Toggl"] → 4
-assign [class="Chromium-browser"] → 3
+#assign [class="Chromium-browser"] → 3
 
 # XXX: Automatically added a call to i3bar to provide a workspace bar
 bar {
