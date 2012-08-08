@@ -1,5 +1,3 @@
-set mapleader=","
-
 " use the listed characters to enumerate quickhint elements
 set hintkeys=asdfghjkl
 
