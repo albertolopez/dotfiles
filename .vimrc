@@ -191,6 +191,7 @@ let g:DisableAutoPHPFolding=1
 
 let g:easytags_autorecurse = 1
 let g:easytags_auto_update = 0
+let g:easytags_auto_highlight = 0
 "--------------------
 " Function: Open tag under cursor in new tab
 " Source:   http://stackoverflow.com/questions/563616/vimctags-tips-and-tricks
@@ -234,4 +235,13 @@ let g:debuggerMiniBufExpl = 1
 
 
 "increment decrement
-:nnoremap <C-l> <C-a>
+nnoremap <C-l> <C-a>
+
+inoremap <C-D> <ESC>:call PhpDocSingle()<CR>i
+"nnoremap <C-D> :call PhpDocSingle()<CR>
+vnoremap <C-D> :call PhpDocRange()<CR> 
+
+
+
+let php_sql_query=1                                                                                        
+let php_htmlInStrings=1
