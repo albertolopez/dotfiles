@@ -165,8 +165,8 @@ bindcode Mod4+58 exec .dmenu/micko-dmenu.sh
 new_window normal
 
 # enable floating mode for all Skype windows
-for_window [class="Skype"] floating enable
-for_window [class="^Pidgin$"] floating enable
+#for_window [class="Skype"] floating enable
+#for_window [class="^Pidgin$"] floating enable
 for_window [class="^Galculator$"] floating enable
 for_window [class="TogglDesktop"] floating enable
 

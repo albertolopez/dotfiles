@@ -15,6 +15,7 @@ keycode 16 = ampersand 7
 keycode 17 = asterisk 8
 keycode 18 = parenleft 9
 keycode 19 = parenright 0
+keycode 49 = grave notsign bar
 
 ! accents
 clear mod5

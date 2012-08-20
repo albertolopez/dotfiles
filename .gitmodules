@@ -134,3 +134,12 @@
 [submodule ".vim/bundle/pdv"]
 	path = .vim/bundle/pdv
 	url = https://github.com/vim-scripts/PDV--phpDocumentor-for-Vim
+[submodule ".vim/bundle/align"]
+	path = .vim/bundle/align
+	url = git://github.com/vim-scripts/Align.git
+[submodule ".vim/bundle/SQLUtilities"]
+	path = .vim/bundle/SQLUtilities
+	url = git://github.com/vim-scripts/SQLUtilities.git
+[submodule ".vim/bundle/dbext.vim"]
+	path = .vim/bundle/dbext.vim
+	url = git://github.com/vim-scripts/dbext.vim.git

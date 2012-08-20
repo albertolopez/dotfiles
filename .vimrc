@@ -245,3 +245,6 @@ vnoremap <C-D> :call PhpDocRange()<CR>
 
 let php_sql_query=1                                                                                        
 let php_htmlInStrings=1
+
+" Selecting your pasted text
+nnoremap gp `[v`]
